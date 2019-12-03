@@ -1,0 +1,12 @@
+image: node:4.2.2
+
+variables:
+  POSTGRES_USER: testuser
+  POSTGRES_PASSWORD: testpass
+
+services:
+  - postgres:latest
+
+all_tests:
+  script:
+    - npm install
